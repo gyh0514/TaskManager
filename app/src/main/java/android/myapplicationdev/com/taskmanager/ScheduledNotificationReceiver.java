@@ -23,6 +23,7 @@ public class ScheduledNotificationReceiver extends BroadcastReceiver {
         PendingIntent pIntent = PendingIntent.getActivity(context, reqCode,
                 i, PendingIntent.FLAG_CANCEL_CURRENT);
 
+        //retrieve string from SecondActivity.
         String name = intent.getStringExtra("name");
         String des = intent.getStringExtra("des");
 
